@@ -1,0 +1,15 @@
+.hello-world a {
+	color: #0074a6;
+}
+
+.hello-world label {
+	margin: 0 0.5em;
+	font-weight: bold;
+}
+
+.hello-world code {
+	background-color: #eee;
+	padding: 2px 4px;
+	border-radius: 4px;
+	color: #304455;
+}

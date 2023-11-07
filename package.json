@@ -1,0 +1,99 @@
+{
+	"name": "reactjs-studyg-project",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"homepage": "https://github.com",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com"
+	},
+	"author": "Mokhtas-Projects",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com"
+	},
+	"keywords": [
+		"react",
+		"vite",
+		"typescript",
+		"vitest",
+		"tailwind",
+		"eslint",
+		"prettier",
+		"husky",
+		"commit-lint",
+		"final-project",
+		"template"
+	],
+	"scripts": {
+		"dev": "vite --port 3000",
+		"build": "vite build",
+		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+		"lint:fix": "eslint . --fix --ext .js,.jsx",
+		"format": "prettier . --check",
+		"format:fix": "prettier . --write",
+		"preview": "vite preview",
+		"prepare": "husky install",
+		"test": "vitest --run --reporter verbose",
+		"test:w": "vitest",
+		"test:ui": "vitest --ui",
+		"test:c": "vitest run --coverage",
+		"test:cw": "vitest watch --coverage"
+	},
+	"dependencies": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@testing-library/dom": "^9.3.3",
+		"@testing-library/jest-dom": "^6.1.4",
+		"@testing-library/react": "^14.0.0",
+		"@testing-library/user-event": "^14.5.1",
+		"@types/react": "^18.2.36",
+		"@types/react-dom": "^18.2.14",
+		"@vitejs/plugin-react": "^4.1.1",
+		"@vitest/coverage-v8": "^0.34.6",
+		"@vitest/ui": "^0.34.6",
+		"autoprefixer": "^10.4.16",
+		"click-to-react-component": "^1.0.8",
+		"cross-fetch": "^4.0.0",
+		"eslint": "^8.53.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-html": "^7.1.0",
+		"eslint-plugin-import": "^2.29.0",
+		"eslint-plugin-jest-dom": "^5.1.0",
+		"eslint-plugin-jsx-a11y": "^6.8.0",
+		"eslint-plugin-react": "^7.33.2",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"eslint-plugin-react-refresh": "^0.4.4",
+		"eslint-plugin-tailwindcss": "^3.13.0",
+		"eslint-plugin-testing-library": "^6.1.0",
+		"happy-dom": "^12.10.3",
+		"htmlhint": "^1.1.4",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.0.2",
+		"msw": "^2.0.3",
+		"postcss": "^8.4.31",
+		"postcss-cli": "^10.1.0",
+		"postcss-syntax": "^0.36.2",
+		"prettier": "^3.0.3",
+		"prettier-plugin-tailwindcss": "^0.5.6",
+		"stylelint": "^15.11.0",
+		"stylelint-config-idiomatic-order": "^9.0.0",
+		"stylelint-config-prettier": "^9.0.5",
+		"stylelint-config-standard": "^34.0.0",
+		"stylelint-config-styled-components": "^0.1.1",
+		"tailwindcss": "^3.3.5",
+		"vite": "^4.5.0",
+		"vitest": "^0.34.6"
+	},
+	"lint-staged": {
+		"*.{js,jsx}": "eslint --cache --fix",
+		"*.css": "stylelint --fix",
+		"*.--check": "prettier --write"
+	},
+	"installConfig": {
+		"pnp": false
+	}
+}
