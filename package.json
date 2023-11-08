@@ -44,7 +44,8 @@
 		"test:c": "vitest run --coverage",
 		"test:cw": "vitest watch --coverage",
 		"storybook": "storybook dev -p 6006",
-		"build-storybook": "storybook build"
+		"build-storybook": "storybook build",
+		"plop": "plop"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
@@ -91,6 +92,7 @@
 		"htmlhint": "^1.1.4",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.0.2",
+		"plop": "^4.0.0",
 		"postcss": "^8.4.31",
 		"postcss-cli": "^10.1.0",
 		"postcss-syntax": "^0.36.2",

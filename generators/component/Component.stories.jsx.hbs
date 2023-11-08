@@ -1,0 +1,14 @@
+import { {{ properCase name }} } from './{{ properCase name }}.jsx';
+
+export default {
+title: 'Components/{{ properCase name }}',
+component: {{ properCase name }},
+parameters: {
+controls: { expanded: true },
+},
+};
+
+const Template = (props) => <{{ properCase name }} {...props}>Hello</{{ properCase name }}>;
+
+export const Default = Template.bind({});
+Default.args = {};

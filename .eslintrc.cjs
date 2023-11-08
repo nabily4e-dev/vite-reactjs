@@ -1,6 +1,6 @@
 module.exports = {
 	root: true,
-	env: { browser: true, es2020: true },
+	env: { browser: true, es2020: true, node: true },
 	extends: [
 		'eslint:recommended',
 		'plugin:import/recommended',
@@ -10,7 +10,7 @@ module.exports = {
 		'plugin:react-hooks/recommended',
 		'plugin:tailwindcss/recommended',
 		'plugin:storybook/recommended',
-		'prettier',
+		'prettier'
 	],
 	ignorePatterns: ['dist', '.eslintrc.cjs'],
 	parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
