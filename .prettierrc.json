@@ -5,7 +5,6 @@
 	"bracketSameLine": false,
 	"bracketSpacing": true,
 	"jsxSingleQuote": true,
-	"plugins": ["prettier-plugin-tailwindcss"],
 	"printWidth": 80,
 	"quoteProps": "as-needed",
 	"tabWidth": 2,
@@ -15,5 +14,6 @@
 	"insertPragma": false,
 	"proseWrap": "preserve",
 	"endOfLine": "lf",
-	"embeddedLanguageFormatting": "auto"
+	"embeddedLanguageFormatting": "auto",
+	"plugins": ["prettier-plugin-tailwindcss"]
 }

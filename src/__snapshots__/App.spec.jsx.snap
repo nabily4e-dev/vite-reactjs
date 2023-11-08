@@ -1,0 +1,66 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders <App> properly 1`] = `
+<DocumentFragment>
+  <main>
+    <div
+      class="_HelloWorld_ea6a9b"
+    >
+      <h1
+        data-testid="title"
+      >
+        Welcome ^^
+      </h1>
+      <p>
+        Recommended IDE setup: 
+        <a
+          href="https://code.visualstudio.com/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          VSCode
+        </a>
+      </p>
+      <p>
+        See 
+        <code>
+          README.md
+        </code>
+         for more information.
+      </p>
+      <p>
+        <a
+          href="https://vitejs.dev/guide/features.html"
+          rel="noreferrer"
+          target="_blank"
+        >
+          Vite Docs
+        </a>
+         | 
+        <a
+          href="https://reactjs.org/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          React Docs
+        </a>
+      </p>
+      <button
+        type="button"
+      >
+        count is: 0
+      </button>
+      <p>
+        Edit 
+        <code>
+          components/HelloWorld/HelloWorld.jsx
+        </code>
+         to test hot module replacement.
+      </p>
+    </div>
+    <h1>
+      Vite + React
+    </h1>
+  </main>
+</DocumentFragment>
+`;
