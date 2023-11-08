@@ -1,5 +1,13 @@
 #!/bin/sh
+# This is a shell script for Husky, a tool that allows you to easily manage Git hooks.
+
 . "$(dirname "$0")/_/husky.sh"
+# This line sources the husky.sh script. The $(dirname "$0") part gets the directory of the current script,
+# and /_/husky.sh is the path to the husky.sh script from that directory.
 
 yarn test:u
+# This line runs the `test:u` script defined in your package.json file. This script should run your unit tests.
+
 npx lint-staged
+# This line runs lint-staged, a tool that runs linters on staged files.
+# This helps catch and fix linting errors before they're committed.

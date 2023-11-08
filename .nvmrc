@@ -1,1 +1,10 @@
+# .nvmrc File Documentation
+#
+# This file is used by Node Version Manager (NVM) to specify which version of Node.js to use for the project.
+# This file is added to the project to ensure consistent Node.js version usage across different environments.
+#
+# lts/*: This line tells NVM to use the latest Long Term Support (LTS) version of Node.js.
+# LTS versions of Node.js are recommended for most use cases because they receive updates for an extended period of time.
+
+# Use the latest Long Term Support (LTS) version of Node.js
 lts/*

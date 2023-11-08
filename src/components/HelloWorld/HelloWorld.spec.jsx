@@ -4,13 +4,13 @@ import { describe, expect, it } from 'vitest'
 import HelloWorld from './HelloWorld.jsx'
 
 describe('HelloWorld', () => {
-	it('randers the component correctly', () => {
+	it('renders the component correctly', () => {
 		// a screenshot test
 		const { asFragment } = render(<HelloWorld msg='Hello React!' />)
 
 		expect(asFragment()).toMatchSnapshot()
 	})
-	it('should renders a msg', () => {
+	it('should render a msg', () => {
 		// arrange
 		render(<HelloWorld msg='Hello React!' />)
 
@@ -18,6 +18,6 @@ describe('HelloWorld', () => {
 		const title = screen.getByTestId('title')
 
 		// assert
-		expect(title).toHaveTextContent(/Hello React!/i)
+		expect(title.textContent).to.include('Hello React!')
 	})
 })

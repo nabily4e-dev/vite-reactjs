@@ -1,4 +1,14 @@
 #!/usr/bin/env sh
+# This is a shell script for Husky, a tool that allows you to easily manage Git hooks.
+
 . "$(dirname -- "$0")/_/husky.sh"
+# This line sources the husky.sh script. The $(dirname -- "$0") part gets the directory of the current script,
+# and /_/husky.sh is the path to the husky.sh script from that directory.
 
 yarn commitlint --edit $1
+# This line runs commitlint on the commit message.
+# Commitlint is a tool that checks if your commit messages meet the conventional commit format.
+#
+# The --edit option tells commitlint to lint the commit message that is being committed.
+# $1 is a special variable in shell scripts that represents the first command-line argument.
+# In this case, it's the path to the file that contains the commit message.
