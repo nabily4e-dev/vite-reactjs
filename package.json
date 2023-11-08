@@ -62,6 +62,8 @@
 		"@vitest/ui": "^0.34.6",
 		"autoprefixer": "^10.4.16",
 		"click-to-react-component": "^1.0.8",
+		"commitlint": "^18.2.0",
+		"commitlint-config-gitmoji": "^2.3.1",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.53.0",
 		"eslint-config-prettier": "^9.0.0",
