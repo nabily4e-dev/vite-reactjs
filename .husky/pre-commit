@@ -5,6 +5,8 @@
 # This line sources the husky.sh script. The $(dirname "$0") part gets the directory of the current script,
 # and /_/husky.sh is the path to the husky.sh script from that directory.
 
+. "$(dirname -- "$0")/common.sh"
+
 yarn test:u
 # This line runs the `test:u` script defined in your package.json file. This script should run your unit tests.
 
