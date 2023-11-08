@@ -49,6 +49,8 @@
 		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^18.2.0",
+		"@commitlint/config-conventional": "^18.1.0",
 		"@testing-library/dom": "^9.3.3",
 		"@testing-library/jest-dom": "^6.1.4",
 		"@testing-library/react": "^14.0.0",
@@ -60,7 +62,7 @@
 		"@vitest/ui": "^0.34.6",
 		"autoprefixer": "^10.4.16",
 		"click-to-react-component": "^1.0.8",
-		"cross-fetch": "^4.0.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.53.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-html": "^7.1.0",
@@ -76,7 +78,6 @@
 		"htmlhint": "^1.1.4",
 		"husky": "^8.0.3",
 		"lint-staged": "^15.0.2",
-		"msw": "^2.0.3",
 		"postcss": "^8.4.31",
 		"postcss-cli": "^10.1.0",
 		"postcss-syntax": "^0.36.2",
@@ -98,5 +99,10 @@
 	},
 	"installConfig": {
 		"pnp": false
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
 	}
 }
