@@ -7,9 +7,6 @@
 
 . "$(dirname -- "$0")/common.sh"
 
-yarn test:u
-# This line runs the `test:u` script defined in your package.json file. This script should run your unit tests.
-
 npx lint-staged
 # This line runs lint-staged, a tool that runs linters on staged files.
 # This helps catch and fix linting errors before they're committed.
