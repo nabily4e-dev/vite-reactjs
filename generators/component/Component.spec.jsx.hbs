@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react'
 import { expect, it } from 'vitest'
 
-import App from './App.jsx'
+import {{properCase name}} from '../{{properCase name}}.jsx'
 
 it('renders correctly', () => {
-	const { asFragment } = render(<App />)
+  const { asFragment } = render(<{{properCase name}} />)
 
 	expect(asFragment()).toMatchSnapshot()
-})
+});

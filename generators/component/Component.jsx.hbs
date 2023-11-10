@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
 
-const {{properCase name}} = (props) => {
-return (
-  <div>
-    {props.children}
-  </div>
-); };
+const {{properCase name}} = props => {
+  return <div>{props.children}</div>
+};
 
-{{properCase name}}.propTypes ={}
+{{properCase name}}.PropTypes ={
+  children: PropTypes.node
+}
 export default {{properCase name}};

@@ -14,7 +14,7 @@ const generator = {
 		{
 			type: 'input',
 			name: 'name',
-			message: 'component name'
+			message: 'Component name?'
 		},
 		{
 			type: 'list',
@@ -48,6 +48,18 @@ const generator = {
 					componentGeneratePath +
 					'/{{properCase name}}/{{properCase name}}.jsx',
 				templateFile: 'generators/component/Component.jsx.hbs'
+			},
+			{
+				type: 'add',
+				path:
+					componentGeneratePath +
+					'/{{properCase name}}/{{properCase name}}.module.css',
+				templateFile: 'generators/component/Component.module.css.hbs'
+			},
+			{
+				type: 'add',
+				path: 'src/components/{{folder}}/{{properCase name}}/__tests__/{{properCase name}}.spec.jsx',
+				templateFile: 'generators/component/Component.spec.jsx.hbs'
 			},
 			{
 				type: 'add',
