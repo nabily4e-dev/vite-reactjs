@@ -36,7 +36,7 @@ jobs:
       #   run: yarn test:c
 
       - name: 📖 Storybook
-        run: yarn storybook
+        run: yarn build-storybook
 
       - name: 🔄 Format Check
         run: yarn format
