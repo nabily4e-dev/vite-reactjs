@@ -1,4 +1,4 @@
-import { Post } from './Post.jsx'
+import Post from './Post.jsx'
 
 export default {
 	title: 'Components/Post',
