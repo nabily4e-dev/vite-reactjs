@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    name: 🧪 Lint and test
+
+    steps:
+      - name: 👍 Checkout
+        uses: actions/checkout@v3
+
+      - name: ❇️ Setup node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'yarn'
+
+      - name: 📥 Install Dependencies
+        run: yarn install
+
+      - name: 💅 Lint
+        run: yarn lint && yarn lint:css
+
+      - name: 🧪 Unit Tests
+        run: yarn test
+
+      # - name: 🧑‍🔬 Component Tests
+      #   run: yarn test:c
+
+      - name: 📖 Storybook
+        run: yarn storybook
+
+      - name: 🔄 Format Check
+        run: yarn format
+
+      - name: 🛠️ Build
+        run: yarn build
